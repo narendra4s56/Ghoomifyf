@@ -1,0 +1,108 @@
+#home-3boxes{
+    img{
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+/* Home.css */
+
+/* Body and general styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h5 {
+    margin: 0;
+  }
+  
+  /* Hero Section */
+  section {
+    position: relative;
+    color: white;
+  }
+  
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
+  
+  /* Dropdown Button */
+  .dropdown-toggle {
+    background-color: #f0ad4e;
+    border: none;
+  }
+  
+  /* Features Section */
+  #home-3boxes {
+    margin-top: 2rem;
+    color: black;
+    background-color: white;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  /* Call to Action Section */
+  .bg-secondary {
+    background-color: #343a40 !important;
+  }
+  
+  .bg-secondary h2 {
+    font-size: 2.5rem;
+  }
+  
+  .bg-secondary .lead {
+    font-size: 1.1rem;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover, .btn-warning:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    #home-3boxes .col-md-4 {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  }
+  

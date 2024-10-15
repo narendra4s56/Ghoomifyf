@@ -1,0 +1,123 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard h3 {
+  font-size: 22px;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard h4 {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.admin-dashboard button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-dashboard button:hover {
+  background-color: #0056b3;
+}
+
+.admin-dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-dashboard li {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.admin-dashboard li button {
+  float: right;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.admin-dashboard li button:hover {
+  background-color: #c82333;
+}
+
+.admin-dashboard .search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* Table styling */
+/* Wrap the table in a container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Apply the same styles as before */
+.support-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.table-header {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+.table-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-data {
+  padding: 12px;
+}
+
+/* Add specific styling for small screens */
+@media (max-width: 600px) {
+  .support-table {
+    width: 100%;
+  }
+}

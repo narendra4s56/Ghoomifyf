@@ -1,0 +1,86 @@
+/* Container for the entire page */
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Rectangle box that holds both sections */
+#login-box {
+    display: flex;
+    width: 90%; /* Set a default width */
+    max-width: 1200px; /* Maximum width for larger screens */
+    height: 80%; /* Set the height of the rectangle */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+/* Left half for the sign-up form */
+#form-container {
+    flex: 1; /* Take half of the rectangle */
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Padding for the form */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Right half for headings, text, and image */
+#info-container {
+    flex: 1; /* Take the other half of the rectangle */
+    background-color: #e9ecef; /* Slightly darker background */
+    padding: 20px; /* Padding for the info section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+/* General styles for headings and text */
+h2, h3, p {
+    margin: 0 0 15px; /* Add margin to headings and paragraphs */
+}
+
+/* Image styles */
+#info-container img {
+    max-width: 80%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add some space above the image */
+}
+
+/* Form inputs and button styles */
+input[type="text"],
+input[type="password"],
+button {
+    margin-bottom: 15px; /* Space between inputs and button */
+}
+
+button {
+    transition: background-color 0.3s ease; /* Smooth transition for button hover */
+}
+
+button:hover {
+    background-color: #4caf50; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #login-box {
+        flex-direction: column-reverse; /* Stack sections vertically on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    #form-container, #info-container {
+        flex: none; /* Allow each section to take full width */
+        width: 100%; /* Full width for each section */
+    }
+
+    /* Adjust padding for smaller screens */
+    #form-container, #info-container {
+        padding: 15px; 
+    }
+}

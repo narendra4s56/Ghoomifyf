@@ -1,0 +1,59 @@
+/* TouristLogin.css */
+
+#signup-container {
+    background-color: #72ace6; /* Light background */
+    height: 90vh; /* Full height */
+    /* width: 100vw; */
+  }
+  
+  #signup-box {
+    width: 100%; /* Full width on small screens */
+    max-width: 800px; /* Max width for larger screens */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    border-radius: 20px;
+    overflow: hidden; /* Ensure children stay within the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    
+  }
+  
+  .login-form {
+    width: 50%; /* Half for login */
+    background-color: rgb(212, 240, 214); /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    border-radius: 10px;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .image-section {
+    width: 50%; /* Half for image and text */
+    background-color: #fafafa; /* Primary color background */
+    color: rgb(19, 18, 18); /* White text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding inside the section */
+  }
+  
+  .image-section img {
+    max-width: 80%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  
+  @media (max-width: 768px) {
+    #signup-box {
+      flex-direction: column-reverse; /* Stack on smaller screens */
+    }
+    .login-form, .image-section {
+      width: 100%; /* Full width on small screens */
+    }
+  }
+  

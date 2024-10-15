@@ -1,0 +1,11 @@
+#signup-container{
+    /* width: 100vw; */
+    /* margin: 0; */
+    /* background-color: red; */
+    background: url(https://media.istockphoto.com/id/1204221215/photo/aerial-wallpaper-background-concept-photography-of-washed-away-human-foot-prints-from-sand.jpg?s=612x612&w=0&k=20&c=pVMr-sZADKhGnMBVMV6ZxvGWHgoxbmGdcAxE9110lrY=);
+    background-size: cover;
+    padding: rem;
+}
+#signup-box{
+    opacity: 0.7;
+}

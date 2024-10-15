@@ -1,0 +1,106 @@
+/* tinsertData.css */
+.insert-data-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .insert-data-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .insert-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* For devices with a max width of 768px (tablets and smaller) */
+  @media (max-width: 768px) {
+    .insert-data-container {
+      width: 90%;
+      padding: 15px;
+      margin: 30px auto;
+    }
+  
+    .insert-data-title {
+      font-size: 22px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .submit-button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  /* For devices with a max width of 480px (mobile devices) */
+  @media (max-width: 480px) {
+    .insert-data-container {
+      width: 95%;
+      padding: 10px;
+      margin: 20px auto;
+    }
+  
+    .insert-data-title {
+      font-size: 20px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .submit-button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

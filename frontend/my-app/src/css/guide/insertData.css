@@ -1,0 +1,80 @@
+/* InsertData.css */
+
+.insert-data {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Padding around the container */
+    background-color: #f8f9fa; /* Light background color */
+    min-height: 100vh; /* Full height */
+  }
+  
+  .insert-data h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark color for heading */
+  }
+  
+  .form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ced4da; /* Light border color */
+    box-shadow: none; /* Remove default box shadow */
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff; /* Blue border on focus */
+    outline: 0; /* Remove default outline */
+    box-shadow: 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue shadow on focus */
+  }
+  
+  .mb-3 {
+    width: 100%; /* Full width for inputs */
+    max-width: 500px; /* Max width for form */
+    margin-bottom: 15px; /* Space between input fields */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color for primary button */
+    border-radius: 5px; /* Rounded corners for button */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3; /* Darker border on hover */
+  }
+  
+  .error-message {
+    color: red; /* Red color for error message */
+    margin-top: 10px; /* Space above error message */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .insert-data {
+      padding: 10px; /* Less padding for smaller screens */
+    }
+  
+    .mb-3 {
+      max-width: 100%; /* Full width for smaller screens */
+    }
+  
+    .btn-primary {
+      font-size: 14px; /* Smaller font size for buttons */
+      padding: 8px 16px; /* Less padding for buttons */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .insert-data h2 {
+      font-size: 24px; /* Smaller heading on extra small screens */
+    }
+  
+    .form-control {
+      font-size: 14px; /* Smaller font size for inputs */
+    }
+  }
+  

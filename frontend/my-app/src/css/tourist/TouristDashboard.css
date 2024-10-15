@@ -1,0 +1,172 @@
+/* General styles for the container */
+.tourist-dashboard-container {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    min-height: 100vh; /* Ensures full height for the dashboard */
+  
+  }
+  
+  /* Title styles */
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+  }
+  
+  /* Support button container */
+  .support-button-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-bottom: 20px; /* Space below the button */
+  }
+  
+  /* Support button styles */
+  .support-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+  }
+  
+  /* Card styles */
+  .profile-card{
+    margin: 20px auto; /* Centers the card */
+    border-radius: 8px; /* Rounds the corners of the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    background-color: white; /* Ensures card has a white background */
+    /* max-width: 900px;  */
+    text-align: center; /* Center text in the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .booked-tours-card {
+    margin: 20px auto; /* Adds margin between cards */
+    border-radius: 8px; /* Rounds the corners of the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    background-color: white; /* Ensures card has a white background */
+    /* max-width: 900px; */
+    /* align-self: center; */
+  }
+  
+  /* Card header styles */
+  .card-header {
+
+    background-color: #3abfdd; 
+    color: white; /* Text color for the header */
+    font-weight: bold; /* Bold header text */
+    padding: 10px 15px; /* Padding around the header */
+  }
+  
+  /* Card body styles */
+  .card-body {
+    padding: 15px; /* Padding within the card body */
+    display: flex;
+  }
+  
+  /* Profile image styles */
+  .profile-image {
+    width: 50px; /* Fixed size for the profile image */
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  /* Profile name styles */
+  .profile-name {
+    margin: 10px 0; /* Margin above and below the name */
+    color: #333; /* Dark color for better readability */
+  }
+  
+  /* Profile info styles */
+  .profile-info {
+    margin-bottom: 15px; /* Space below the profile info */
+  }
+  
+  /* Button container styles */
+  .button-container {
+    display: flex; /* Makes buttons align in a row */
+    justify-content: space-between; /* Space between buttons */
+  }
+  
+  /* Table styles */
+  .booked-tours-table {
+    width: 100%; /* Ensures the table takes full width */
+    margin-top: 20px; /* Space above the table */
+    border-collapse: collapse; /* Removes space between cells */
+  }
+  
+  /* Table header styles */
+  .booked-tours-table th {
+    background-color: #3693f7; 
+    color: white; /* Header text color */
+    padding: 8px; /* Padding inside table headers */
+  }
+  
+  /* Striped rows */
+  .booked-tours-table tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Light background for odd rows */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .support-button-container {
+      justify-content: center; /* Center support button on medium screens */
+      margin-bottom: 15px;
+    }
+  
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center; /* Center align buttons */
+    }
+  
+    .button-container .btn {
+      margin: 5px 0; /* Space between stacked buttons */
+      width: 100%; /* Full width for buttons */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tourist-dashboard-container {
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  
+    .profile-card, .booked-tours-card {
+      margin: 15px 0; /* Less margin between cards */
+    }
+  
+    .booked-tours-table th, .booked-tours-table td {
+      padding: 5px; /* Reduce padding in table cells */
+    }
+  
+    .booked-tours-table {
+      font-size: 14px; /* Smaller text for table */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-title {
+      font-size: 1.5em; /* Smaller title size on very small screens */
+    }
+  
+    .support-button {
+      padding: 8px 10px; /* Smaller button padding */
+    }
+  
+    .profile-image {
+      width: 40px; /* Smaller profile image */
+      height: 40px;
+    }
+  
+    .profile-name {
+      font-size: 1.2em; /* Smaller name font size */
+    }
+  
+    .booked-tours-table {
+      font-size: 12px; /* Further reduced table text size */
+    }
+  }
+  

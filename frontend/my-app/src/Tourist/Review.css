@@ -1,0 +1,105 @@
+/* Container for the entire review form */
+.review-form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the review form */
+.review-form-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form layout */
+.review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels for the form elements */
+.review-form-label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Select input styling */
+.review-form-select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.review-form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea styling */
+.review-form-textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.review-form-textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+.review-form-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Disable the button when necessary */
+.review-form-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .review-form-container {
+        padding: 15px;
+    }
+
+    .review-form-title {
+        font-size: 20px;
+    }
+
+    .review-form-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
