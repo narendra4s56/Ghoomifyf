@@ -59,8 +59,8 @@ function GuideLogin() {
 
     return (
       <div id='login-container'>
-        <div id='login-box'>
-          <div id='form-container'>
+        <div id='login-box' className="animate__animated animate__fadeInDown">
+          <div id='form-container' className="animate__animated animate__fadeInLeft">
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
@@ -89,7 +89,7 @@ function GuideLogin() {
               <a href='/signup-guide' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none mt-4'>Register</a>
             </form>
           </div>
-          <div id='info-container'>
+          <div id='info-container' className="animate__animated animate__fadeInRight">
             <h3>Welcome to Ghoomify</h3>
             <p>Your adventure starts here! Join us to explore amazing places.</p>
             <img src="https://img.freepik.com/free-vector/tour-vacation-guide-concept-tourists-listening-history-city-attractions-tour-entertainment-idea-traveling-learning-isolated-vector-illustration_613284-3036.jpg?size=626&ext=jpg&ga=GA1.1.513886729.1728120774&semt=ais_hybrid" alt="Explore" /> {/* Replace with your image path */}
