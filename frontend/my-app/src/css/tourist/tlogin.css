@@ -1,59 +1,122 @@
-/* TouristLogin.css */
-
+/* Container for entire page */
 #signup-container {
-    background-color: #72ace6; /* Light background */
-    height: 90vh; /* Full height */
-    /* width: 100vw; */
-  }
-  
+  background: linear-gradient(to right, #72ace6, #9bd4f5);
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Main login box */
+#signup-box {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  background-color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Left login form area */
+.login-form {
+  width: 50%;
+  background-color: #f4fff7;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading in login form */
+.login-form h2 {
+  margin-bottom: 30px;
+  color: #28a745;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form inputs */
+.login-form input {
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 10px rgba(72, 187, 120, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+.login-form .btn {
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.login-form .btn:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Right image section */
+.image-section {
+  width: 50%;
+  background: linear-gradient(to bottom right, #d0eaff, #ffffff);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Image */
+.image-section img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome text */
+.image-section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.image-section p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Responsive layout for small devices */
+@media (max-width: 768px) {
   #signup-box {
-    width: 100%; /* Full width on small screens */
-    max-width: 800px; /* Max width for larger screens */
-    display: flex;
-    flex-direction: row; /* Horizontal layout */
-    border-radius: 20px;
-    overflow: hidden; /* Ensure children stay within the box */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-    
+    flex-direction: column-reverse;
   }
-  
+
+  .login-form, .image-section {
+    width: 100%;
+  }
+
   .login-form {
-    width: 50%; /* Half for login */
-    background-color: rgb(212, 240, 214); /* White background for the form */
-    padding: 20px; /* Padding inside the form */
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    border-radius: 10px;
+    padding: 25px;
   }
-  
-  .login-form h2 {
-    margin-bottom: 20px; /* Space below the heading */
-  }
-  
+
   .image-section {
-    width: 50%; /* Half for image and text */
-    background-color: #fafafa; /* Primary color background */
-    color: rgb(19, 18, 18); /* White text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    padding: 20px; /* Padding inside the section */
+    padding: 20px;
   }
-  
-  .image-section img {
-    max-width: 80%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the image */
-  }
-  
-  @media (max-width: 768px) {
-    #signup-box {
-      flex-direction: column-reverse; /* Stack on smaller screens */
-    }
-    .login-form, .image-section {
-      width: 100%; /* Full width on small screens */
-    }
-  }
-  
+}
+
+/* Optional fadeIn animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
