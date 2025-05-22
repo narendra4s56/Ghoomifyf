@@ -5,9 +5,8 @@ const Razorpay = require("razorpay");
 const crypto = require("crypto");
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const { Pool } = require('pg'); // Import the pg library
-require('dotenv').config(); // Load environment variables
-
+const { Pool } = require('pg'); 
+require('dotenv').config();
 
 
 const app = express()
@@ -528,7 +527,7 @@ app.post("/order", async (req, res) => {
 
 
 
-// Your Razorpay instance
+//  Razorpay instance
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID,
   key_secret: process.env.RAZORPAY_KEY_SECRET

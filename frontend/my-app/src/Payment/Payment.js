@@ -45,6 +45,7 @@ function Payment({
             });
 
             const order = await orderResponse.json();
+            console.log(order);
 
             if (order.order && order.order.id) {
                 const options = {
